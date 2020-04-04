@@ -2,3 +2,38 @@
     margin: 0;
     padding: 0;
 }
+
+
+/* head */
+
+header {
+    height: 100vh;
+    background-attachment: fixed;
+    background-color: chartreuse;
+    background-position: center;
+}
+
+header nav {
+    background-color: burlywood;
+    height: 100px;
+}
+
+header a .logo {
+    background: none;
+    width: 100px;
+    float: left;
+    padding: 0 auto;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.nav.menu {
+    float: right;
+    margin-right: 30px;
+    margin-top: 25px;
+    padding: 0 auto;
+}
+
+.nav.menu a {
+    margin: 10px;
+}
