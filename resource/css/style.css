@@ -4,13 +4,38 @@
 }
 
 
+/*                 */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    /* background-color: gold; */
+    display: block;
+}
+
+
 /* head */
 
 header {
+    position: relative;
     height: 100vh;
     background-attachment: fixed;
     background-color: chartreuse;
     background-position: center;
+}
+
+.sticky {
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 header nav {
@@ -36,4 +61,22 @@ header a .logo {
 
 .nav.menu a {
     margin: 10px;
+}
+
+.quick.search {
+    position: absolute;
+    bottom: 0px;
+    background-color: green;
+    width: 100%;
+}
+
+.quick.search .row .col.span_3_of_8 {
+    display: flex;
+}
+
+
+/* quick action*/
+
+.quick.action {
+    height: 100px;
 }

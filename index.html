@@ -8,8 +8,8 @@
 
 <body>
     <header>
-        <nav>
-            <a class="sticky" href="#">
+        <nav class="sticky">
+            <a href="#">
                 <img class="logo" src="/resource/img/demo1.jpg" alt="logo">
             </a>
             <div class="nav menu">
@@ -18,8 +18,19 @@
                 <a> vé máy bay</a>
                 <a> chỗ ở</a>
             </div>
-            <form action="Quick Search" class="quick search" method="GET"></form>
         </nav>
+        <form action="Quick Search" class="quick search" method="GET">
+            <div class="row">
+                <div class="col span_3_of_8">
+                    <label>ID</label>
+                    <input type="text" placeholder="ID">
+                </div>
+                <div class="col span_3_of_8">
+                    <label>Name</label>
+                    <input type="text" placeholder="Name">
+                </div>
+            </div>
+        </form>
     </header>
     <section class="quick action">
 
