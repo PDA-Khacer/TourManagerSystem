@@ -4,6 +4,8 @@
 <head>
     <title>Tour manger</title>
     <link rel="stylesheet" href="/resource/css/style.css">
+    <link rel="stylesheet" href="/vendors/css/grid.css">
+    <link rel="stylesheet" href="/resource/js/scripts.js">
 </head>
 
 <body>
@@ -19,18 +21,29 @@
                 <a> chỗ ở</a>
             </div>
         </nav>
-        <form action="Quick Search" class="quick search" method="GET">
-            <div class="row">
-                <div class="col span_3_of_8">
-                    <label>ID</label>
-                    <input type="text" placeholder="ID">
+        <div class="clearfix"></div>
+        <div class="tab">
+            <button class="tablinks" onclick="openSearch(event,'Address')">Address</button>
+            <button class="tablinks" onclick="openSearch(event,'Hottel')">Hottel</button>
+            <button class="tablinks" onclick="openSearch(event,'Tour')">Tour</button>
+        </div>
+        <div id="Address" class="tabContent">
+            <form action="Quick Search" class="quick search" method="GET">
+                <div class="row">
+                    <div class="col span_3_of_8">
+                        <label>ID</label>
+                        <input type="text" placeholder="ID">
+                    </div>
+                    <div class="col span_3_of_8">
+                        <label>Name</label>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="col span_2_of_8">
+                        <input type="submit">
+                    </div>
                 </div>
-                <div class="col span_3_of_8">
-                    <label>Name</label>
-                    <input type="text" placeholder="Name">
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </header>
     <section class="quick action">
 

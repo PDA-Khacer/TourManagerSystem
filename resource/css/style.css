@@ -15,7 +15,6 @@
 .row {
     max-width: 1140px;
     margin: 0 auto;
-    /* background-color: gold; */
     display: block;
 }
 
@@ -63,15 +62,53 @@ header a .logo {
     margin: 10px;
 }
 
-.quick.search {
+
+/* .quick.search {
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     background-color: green;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    height: 50px;
+} */
+
+.tab {
+    position: absolute;
+    bottom: 100px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 80%;
+    margin-left: 10%;
+    height: 50px;
 }
 
-.quick.search .row .col.span_3_of_8 {
-    display: flex;
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabContent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.quick.search .row * {
+    display: inline-block;
 }
 
 
